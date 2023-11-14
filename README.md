@@ -1,55 +1,87 @@
 # IBM-Employee-Attrition-Performance-Analysis
 
-📌 Uncover the factors that lead to employee attrition and explore important questions such as ‘show me a breakdown of distance from home by job role and attrition’ or ‘compare average monthly income by education and attrition’. 
+IBM, a multinational corporation operating in over 170 countries and specializing in computing, software, and hardware, recognizes attrition as a common challenge that companies globally must address for improvement. The organization is actively focused on understanding the factors that contribute to employee attrition.
 
-This is a fictional data set created by IBM data scientists.
+Our objective is to identify and analyze these factors influencing employee attrition and subsequently construct a machine-learning model capable of predicting whether an employee is likely to leave or remain with the company.
+
+Please note that this is a fictional data set created by IBM data scientists.
 
 
-## DATASET
+# DATASET
 
 [WA_Fn-UseC_-HR-Employee-Attrition.csv]([https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bc6f32a9-0024-4a3e-9e44-6690df275bf3/WA_Fn-UseC_-HR-Employee-Attrition.csv](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset/)
 
-## RESEARCH QUESTIONS:
+# Analysis Task:
 
-1. What is the attrition rate for the company, and what are the factors that contribute to it?
-2. Is there a relationship between distance from home and attrition, and does it vary by job role?
-3. How does employee education level affect their monthly income, and does this impact attrition rates?
-4. Are there any gender differences in job satisfaction, and does this impact attrition rates?
-5. What factors are associated with employee performance ratings, and is there a relationship between performance ratings and attrition?
-# DESCRIPTION
-IBM is an American MNC operating in around 170 countries with major business vertical as computing, software, and hardware.
-Attrition is a major risk to service-providing organizations where trained and experienced people are the assets of the company. The organization would like to identify the factors which influence the attrition of employees.
+- Data Preparation:
+
+  Import the attrition dataset and necessary libraries, including pandas, matplotlib.pyplot, numpy, and seaborn.
+
+- Exploratory Data Analysis (EDA):
+
+  - Explore attrition based on age.
+  - Investigate attrition patterns by gender.
+  - Examine the distribution of employees across different education fields.
+
+- Hypothesis Testing:
+
+  Formulate and test two hypothesis to gain insights into factors influencing attrition.
+
+- Machine Learning Model:
+
+  - Develop a machine-learning model to predict employee attrition.
+  - Evaluate and choose the best-performing model based on relevant metrics.
+
+- Dashboard Creation in Tableau:
+
+  - Utilize Tableau to create an interactive dashboard.
+  - Showcase key insights, visualizations, and model predictions related to employee attrition.
 
 # Data Dictionary
 - Age: Age of employee
-- Attrition: Employee attrition status
-- Department: Department of work
-- DistanceFromHome
+- Attrition: Employee attrition status(whether an employee has left the company)
+- BusinessTravel: Non-Travel; Travel-Frequently; Travel-Rarely
+- DailyRate: Daily pay rate of an employee
+- Department: Department of employee
+- DistanceFromHome: The distance from the employee's home to the workplace
 - Education: 1-Below College; 2- College; 3-Bachelor; 4-Master; 5-Doctor
-- EducationField
+- EducationField: The field of education of the employee
+- EmployeeCount: The count of employee
+- EmployeeNumber: The unique number of the employee
 - EnvironmentSatisfaction: 1-Low; 2-Medium; 3-High; 4-Very High
+- Gender: Gender of the employee
+- HourlyRate: Hourly pay rate of an employee
+- JobInvolvement: 1-Low; 2-Medium; 3-High; 4-Very High
+- Job Level: The level of an employee
+- Job Role: The role of the employee in the company
 - JobSatisfaction: 1-Low; 2-Medium; 3-High; 4-Very High
-- MaritalStatus
-- MonthlyIncome
+- MaritalStatus: Marital status of the employee
+- MonthlyIncome: The monthly income of the employee
+- MonthlyRate: Monthly pay rate of an employee
 - NumCompaniesWorked: Number of companies worked prior to IBM
+- Over18: Whether the employee is over 18
+- OverTime: Whether the employee works overtime
+- PercentSalaryHike: The percentage of salary hike
+- PerformanceRating: 1-Low; 2-Good; 3-Excellent; 4-Outstanding
+- RelationshipSatisfaction: 1-Low; 2-Medium; 3-High; 4-Very High
+- StandardHours: Standard working hours
+- StockOptionLevel: Level of stock options
+- TotalWokingYears: Total years of working experience
+- TrainingTimesLastYear： Number of training times last year
 - WorkLifeBalance: 1-Bad; 2-Good; 3-Better; 4-Best
 - YearsAtCompany: Current years of service in IBM
-- 
-# Analysis Task:
-- Import attrition dataset and import libraries such as pandas, matplotlib.pyplot, numpy, and seaborn.
-- Exploratory data analysis
-  - Find the age distribution of employees in IBM
-  - Explore attrition by age
-  - Explore data for Left employees
-  - Find out the distribution of employees by the education field
-  - Give a bar chart for the number of married and unmarried employees
-  - Build up a logistic regression model to predict which employees are likely to attrite.
+- YearsInCurrentRole：Years in the current role
+- YearsSinceLastPromotion：Years since the last promotion
+- YearsWithCurrManager：Years with the current manager
+
 
 # Libraries used:
 - numpy
 - pandas
-- tensorflow
 - matplotlib.pyplot
-- patsy
 - sklearn
 - seaborn
+- pymysql
+- statsmodels
+- scipy
+- imbalanced-learn
