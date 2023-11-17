@@ -85,3 +85,8 @@ Please note that this is a fictional data set created by IBM data scientists.
 - statsmodels
 - scipy
 - imbalanced-learn
+
+
+# Tableau Public Link:
+
+https://public.tableau.com/app/profile/lilintong/viz/IBMEmployeeAttritionAnalysisDashboard/EmployeeAttritionAnalysisDashboard
